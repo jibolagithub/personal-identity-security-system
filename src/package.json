@@ -1,0 +1,25 @@
+{
+  "name": "truffle-python-node-project",
+  "version": "1.0.0",
+  "description": "A project configured to run with both Python and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "test": "truffle test",
+    "start:node": "node server.js",
+    "start:python": "python3 app.py",
+    "postinstall": "echo 'To set up the Python environment, follow these steps:\n\n1. Install virtualenv if you don\'t have it:\n   pip install virtualenv\n\n2. Create a virtual environment:\n   virtualenv venv\n\n3. Activate the virtual environment:\n   For Windows:\n     venv\\Scripts\\activate\n   For macOS/Linux:\n     source venv/bin/activate\n\n4. Install Python dependencies:\n   pip install -r requirements.txt\n\n5. Run the project:\n   python3 app.py or npm run start:node'"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.13",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "truffle": "^5.5.27"
+  }
+}
+

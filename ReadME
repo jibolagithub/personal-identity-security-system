@@ -1,0 +1,116 @@
+
+# Personal Identity Security using Blockchain
+
+This project aims to provide a secure way to manage personal identity using blockchain technology. Users can register, login, upload files, and share them securely.
+
+## Setup
+
+### Prerequisites
+
+- Python 3.x installed
+- Flask framework
+- Truffle framework
+- MetaMask extension for your browser
+- Ganache for local blockchain development
+
+### Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/yourusername/yourproject.git
+   cd yourproject
+   ```
+
+2. Install Python dependencies:
+
+   ```
+   pip install Flask
+   pip install web3
+   pip install Werkzeug
+   ```
+
+3. Install Truffle (if not already installed):
+
+   ```
+   npm install -g truffle
+   ```
+
+4. Install project dependencies:
+
+   ```
+   npm install
+   ```
+
+5. Set up MetaMask:
+   - Install the MetaMask extension for your browser.
+   - Connect MetaMask to your local Ganache network.
+
+6. Set up Ganache:
+   - Download and install Ganache from [here](https://www.trufflesuite.com/ganache).
+   - Run Ganache and make sure it's listening on `http://127.0.0.1:7545`.
+
+7. Set up project environment variables:
+   - Create a `.env` file in the project root directory.
+   - Add the following environment variables:
+
+     ```
+     BLOCKCHAIN_URL=http://127.0.0.1:7545
+     SECRET_KEY=your_secret_key_here
+     ```
+
+     Replace `your_secret_key_here` with your secret key for Flask sessions.
+
+## Usage
+
+1. Compile and deploy smart contracts:
+   ```
+   truffle compile
+   truffle migrate --network ganache
+   ```
+
+2. Run the Flask application:
+   ```
+   python app.py
+   ```
+
+3. Access the application in your browser:
+   ```
+   http://localhost:5001
+   ```
+
+## Features
+
+- User registration and login
+- Secure file upload and storage
+- File sharing with other users
+- View shared files and manage sharing permissions
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues and pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+
+Additional instructions 
+install virtualenv if you dont have it 
+*pip install virtualenv*
+
+Create a virtual environment 
+*virtualenv venv*
+
+Activate the virtual environment 
+For Windows
+*venv\Scripts\activate
+For macOS/Linux
+*source venv /bin/activate*
+
+*pip install -r requirements.text*
+
+Run the project 
+python3 app.py or node app.py
