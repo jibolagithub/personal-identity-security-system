@@ -1,0 +1,19 @@
+
+
+
+{
+  "dependencies": {
+    "@ethereumjs/block": "^5.2.0",
+    "@ethereumjs/common": "^4.3.0",
+    "@ethereumjs/tx": "^5.3.0",
+    "@ethereumjs/vm": "^8.0.0",
+    "@metamask/eth-sig-util": "^7.0.2",
+    "@metamask/json-rpc-engine": "^9.0.0",
+    "@metamask/safe-event-emitter": "^3.1.1",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "dotenv": "^16.4.5",
+    "mkdirp": "^3.0.1",
+    "solc": "^0.8.18",
+    "web3": "^4.9.0"
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Identity Security using Blockchain</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='login/style.css') }}" />
+        <script src="{{ url_for('static', filename='login/script.js') }}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box-1">
+                <div class="content-holder">
+                    <h2>Hello!</h2>
+                    <button class="button-1" onclick="showSignup()">Sign up</button>
+                    <button class="button-2" onclick="showLogin()">Login</button>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <!-- Login Form -->
+                <div class="login-form-container" id="login-form" style="display:none;">
+                    <form action="/loginUser" method="post">
+                        <h1>Login Form</h1>
+                        <input type="text" placeholder="Wallet Address" name="wallet_address" class="input-field" required="">
+                        <br><br>
+                        <input type="password" placeholder="Password" name="password" class="input-field" required="">
+                        <br><br>
+                        <button class="login-button" type="submit">Login</button>
+                    </form>
+                    <br/><br/>
+                    <span style="color:red">{{ err1 }}</span>
+                    <span style="color:green">{{ res1 }}</span>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="signup-form-container" id="signup-form" style="display:none;">
+                    <h1>Sign Up Form</h1>
+                    <form action="/registerUser" method="post">
+                        <input type="text" placeholder="Wallet Address" name="wallet_address" class="input-field" required="">
+                        <br><br>
+                        <input type="text" placeholder="Your Name" name="name" class="input-field" required="">
+                        <br><br>
+                        <input type="text" placeholder="Mobile" name="mobile" class="input-field" required="">
+                        <br><br>
+                        <input type="email" placeholder="Email" name="email" class="input-field" required="">
+                        <br><br>
+                        <input type="password" placeholder="Password" name="password" class="input-field" required="">
+                        <br><br>
+                        <button class="signup-button" type="submit">Sign Up</button>
+                    </form>
+                    <br/><br/>
+                    <span style="color: red;">{{ err }}</span>
+                    <span style="color: green;">{{ res }}</span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showSignup() {
+                document.getElementById('signup-form').style.display = 'block';
+                document.getElementById('login-form').style.display = 'none';
+            }
+
+            function showLogin() {
+                document.getElementById('signup-form').style.display = 'none';
+                document.getElementById('login-form').style.display = 'block';
+            }
+        </script>
+    </body>
+</html>
+

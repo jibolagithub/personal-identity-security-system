@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@apollo/usage-reporting-protobuf": "^4.1.1",
+    "@apollo/utils.fetcher": "^3.1.0",
+    "@ensdomains/ens-contracts": "^1.1.4",
+    "@truffle/abi-utils": "^1.0.3",
+    "@truffle/codec": "^0.17.3",
+    "@truffle/compile-common": "^0.9.8",
+    "@truffle/db": "^2.0.12",
+    "@truffle/debugger": "^12.1.5",
+    "@truffle/interface-adapter": "^0.5.37",
+    "axios": "^1.7.2",
+    "chokidar": "^3.6.0",
+    "ganache": "^7.9.2",
+    "lodash": "^4.17.21",
+    "mkdirp": "^3.0.1",
+    "multiformats": "^1.1.13",
+    "rimraf": "^5.0.7",
+    "solc": "^0.8.26",
+    "uuid": "^9.0.1",
+    "web3": "^4.9.0"
+  }
+}

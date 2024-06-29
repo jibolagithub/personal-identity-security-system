@@ -1,0 +1,5 @@
+2024/06/22-08:39:47.459006 7a96ddbfd640 Recovering log #9
+2024/06/22-08:39:47.459190 7a96ddbfd640 Level-0 table #11: started
+2024/06/22-08:39:47.497913 7a96ddbfd640 Level-0 table #11: 762 bytes OK
+2024/06/22-08:39:47.610169 7a96ddbfd640 Delete type=0 #9
+2024/06/22-08:39:47.610261 7a96ddbfd640 Delete type=3 #7
